@@ -1,0 +1,12 @@
+{
+    "posts": [
+        {"id": 1, "title": "Post 1", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVcwjLM-qT0pXvFXzlSTNaf0_n8TwDZBR14w&s", "direction": "normal", "size": "1", "likes": "20"},
+        {"id": 2, "title": "Post 2", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVcwjLM-qT0pXvFXzlSTNaf0_n8TwDZBR14w&s", "direction": "column", "size": "2", "likes": "20"},
+        {"id": 3, "title": "Post 3", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVcwjLM-qT0pXvFXzlSTNaf0_n8TwDZBR14w&s", "direction": "row", "size": "2", "likes": "20"}
+    ],
+    "comments": [
+        {"id": 1, "body": "some comment", "user": "test", "postId": 1},
+        {"id": 2, "body": "some comment", "user": "test", "postId": 2},
+        {"id": 3, "body": "some comment", "user": "test", "postId": 3}
+    ]
+}

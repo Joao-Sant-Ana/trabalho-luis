@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+:root {
+    --primary-color: #161616;
+    --secondary-color: #FFF;
+    --heart-color: #C60E0E;
+    --primary-font: 'Concert One', sans-serif;
+    --secondary-font: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+
+}
+
+header {
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 65px 0px 65px;
+    gap: 8px;
+
+    & hr {
+        width: 100%;
+        height: 1px;
+        background-color: var(--secondary-color);
+    }
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: var(--secondary-color);
+        padding: 0px 40px;
+
+        /*Primeira div */
+        & button {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            border: none;
+            width: clamp(100px, 150px, 200px);
+            border-radius: 8px;
+            font-size: 1rem;
+            padding: 5px 30px;
+            font-family: var(--primary-font);
+            cursor: pointer;
+            animation-duration: 1000ms;
+        }
+
+        & h1 {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+        }
+
+        /*Segunda div */
+        & h2 {
+            width: 100%;
+            color: var(--primary-color);
+            font-family: var(--secondary-font);
+            font-size: 1.5rem;
+            text-align: center;;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 9rem - 6rem);
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 165px;
+
+    & #postsArea {
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-auto-rows: 1fr;
+        gap: 20px;
+    
+        & .post {
+            width: 100%;
+            height: auto;
+            background-color: #161616;
+            margin: 0 auto;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & .column {
+            grid-column: span 2;
+        }
+
+        & .row {
+            grid-row: span 2;
+        }
+
+        & .normal {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+}
+
+footer {
+    font-family: var(--primary-font);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 65px 0px 65px;
+    gap: 8px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    & h1 {
+        color: var(--secondary-color);
+        font-size: 1.75rem;
+    }
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    & p {
+        font-family: var(--secondary-font);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 0px 10px;
+        & div {
+            padding: 0px 10px;
+            & h1 {
+                font-size: 1.5rem;
+            }
+
+            & h2 {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    footer {
+        & h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
