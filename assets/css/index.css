@@ -17,7 +17,6 @@
 body {
     max-width: 100vw;
     min-height: 100vh;
-
 }
 
 header {
@@ -77,6 +76,45 @@ header {
     }
 }
 
+#postDetailsBackground {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 10;
+    display: none;
+
+    & #postDetails {
+        width: 77%;
+        height: 70%;
+        z-index: 20;
+        background-color: var(--secondary-color);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 420px;
+        left: 50%;
+        transform: translateX(-50%);
+        align-items: center;
+        transform: translate(-50%, -50%);
+
+        & .post {
+            & div{ 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                & .close {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
 main {
     width: 100%;
     min-height: calc(100vh - 9rem - 6rem);
@@ -87,16 +125,18 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 20px 165px;
+    z-index: 0;
+    position: relative;
 
     & #postsArea {
         width: 100%;
         height: fit-content;
         display: grid;
-        align-items: center;
+        align-items: start;
         grid-template-columns: repeat(3, 1fr);
         grid-template-columns: repeat(auto-fill, 1fr);
         grid-auto-rows: 1fr;
-        gap: 20px;
+        gap: 10px;
     
         & .post {
             width: 100%;
@@ -106,21 +146,34 @@ main {
 
             & img {
                 width: 100%;
-                height: 100%;
+                height: 300px;
+                object-fit: cover;
+                display: block;
             }
         }
 
         & .column {
             grid-column: span 2;
+            width: 100%;
+
+            & img {
+                height: 300px;
+            }
         }
 
         & .row {
             grid-row: span 2;
+            height: 100%;
+
+            & img {
+                height: 100%;
+            }
         }
 
         & .normal {
             grid-column: span 1;
             grid-row: span 1;
+
         }
     }
 }

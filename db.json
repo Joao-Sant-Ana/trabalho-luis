@@ -1,8 +1,14 @@
 {
     "posts": [
-        {"id": 1, "title": "Post 1", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVcwjLM-qT0pXvFXzlSTNaf0_n8TwDZBR14w&s", "direction": "normal", "size": "1", "likes": "20"},
-        {"id": 2, "title": "Post 2", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVcwjLM-qT0pXvFXzlSTNaf0_n8TwDZBR14w&s", "direction": "column", "size": "2", "likes": "20"},
-        {"id": 3, "title": "Post 3", "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVcwjLM-qT0pXvFXzlSTNaf0_n8TwDZBR14w&s", "direction": "row", "size": "2", "likes": "20"}
+        {"id": 1, "title": "Post 1", "img": "assets/img/everest.jpg", "direction": "column", "size": "1", "likes": "20"},
+        {"id": 2, "title": "Post 2", "img": "assets/img/monteFuji.jpg", "direction": "row", "size": "2", "likes": "20"},
+        {"id": 3, "title": "Post 3", "img": "assets/img/alpesSuicos.jpg", "direction": "normal", "size": "2", "likes": "20"},
+        {"id": 4, "title": "Post 4", "img": "assets/img/grandCanyon.jpg", "direction": "normal", "size": "2", "likes": "20"},
+        {"id": 5, "title": "Post 4", "img": "assets/img/monteBranco.jpg", "direction": "row", "size": "2", "likes": "20"},
+        {"id": 6, "title": "Post 4", "img": "assets/img/monteElbrus.jpg", "direction": "column", "size": "2", "likes": "20"},
+        {"id": 7, "title": "Post 4", "img": "assets/img/picoPikes.jpg", "direction": "normal", "size": "2", "likes": "20"},
+        {"id": 8, "title": "Post 4", "img": "assets/img/huandoy.jpg", "direction": "normal", "size": "2", "likes": "20"}
+
     ],
     "comments": [
         {"id": 1, "body": "some comment", "user": "test", "postId": 1},
